@@ -20,8 +20,8 @@ def set_columns_names(ws):
                                 bottom=Side(border_style='thin',
                                             color='C0C0C0'))
 
-    ws['l'][1].fill = PatternFill(fill_type='solid', start_color="FF0000", end_color='000000')
-    ws['l'][1].border = Border(left=Side(border_style='thin',
+    ws['k'][1].fill = PatternFill(fill_type='solid', start_color="FF0000", end_color='000000')
+    ws['k'][1].border = Border(left=Side(border_style='thin',
                                          color='C0C0C0'),
                                right=Side(border_style='thin',
                                           color='C0C0C0'),
@@ -127,6 +127,7 @@ def split_excel(input_file, output_folder):
 
 
 def parse_excel(input_file, output_folder):
+    # todo add xls to xlsx parser!!
     res_files = split_excel(input_file, output_folder)
     # res_files = ['../../test_data/10.02.20.xlsx']
 
@@ -135,8 +136,8 @@ def parse_excel(input_file, output_folder):
 
 
 def test():
-    input_file = '../../../2020/02_february 2020/25-28.02.20.xlsx'
-    output_folder = '../../../2020/02_february 2020/'
+    input_file = '../../../2020/07_july 2020/06-10.07.2020.xlsx'
+    output_folder = '../../../2020/07_july 2020/'
 
     parse_excel(input_file, output_folder)
 

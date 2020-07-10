@@ -22,7 +22,7 @@ def get_names_columns():
     with open(os.path.join(cur_dir, '../../data/subscribers.json'), 'r') as f:
         subscribers = json.load(f)
 
-    names = [sub["name"] for sub in subscribers]
+    names = [sub["excel_title"] for sub in subscribers]
 
     alphabet = list(ascii_lowercase)
     start = alphabet.index('g')
